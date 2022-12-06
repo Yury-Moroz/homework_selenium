@@ -4,17 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --config mocharc.json",
+    "test:predprod": "mocha --config mocharc_preprod.json",
+    "tests": "echo \"Error: no test specified\" && exit 1",
     "jest:run": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/chromedriver": "^81.0.1",
+    "@types/mocha": "^10.0.1",
     "@types/node": "^18.11.9",
     "@types/selenium-webdriver": "^4.1.9",
     "@types/superagent": "^4.1.15",
     "chromedriver": "^107.0.3",
+    "mocha": "^10.1.0",
     "prettier": "^2.7.1",
     "selenium-webdriver": "^4.6.1",
     "superagent": "^8.0.3",
